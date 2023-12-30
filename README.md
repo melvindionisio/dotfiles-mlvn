@@ -1,6 +1,6 @@
-## Personal Lazy-vim Setup
+## Personal LazyVim Setup
 
-Based from [craftzdog's dotfiles](https://github.com/craftzdog/dotfiles-public)
+Based on [craftzdog's dotfiles](https://github.com/craftzdog/dotfiles-public)
 
 ![nvim screenshot](./images/nvim-screenshot.jpeg)
 ![lazyvim screenshot](./images/lazyvim-screenshot.jpeg)
