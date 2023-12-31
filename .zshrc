@@ -108,9 +108,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias gint="git init"
-alias gstat="git status"
-alias gadd="git add"
-alias gcomm="git commit -m"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
 alias gpush="git push origin master"
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
