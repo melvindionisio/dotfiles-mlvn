@@ -119,6 +119,11 @@ alias cls="clear"
 alias vi="nvim"
 alias xx="exit"
 alias src="source"
+alias py="python3"
+alias ignoreexeptcurrent="git status --porcelain | grep '^??' | cut -c4- >> .gitignore"
+alias ignoreinit="touch .gitignore && echo -e '#Mac/OSX\n.DS_Store' >> .gitignore"
+alias lah="ls -a"
+alias la="ll -a"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
