@@ -125,5 +125,7 @@ alias ignoreinit="touch .gitignore && echo -e '#Mac/OSX\n.DS_Store' >> .gitignor
 alias lah="ls -a"
 alias la="ll -a"
 
+alias checkbatteryhealth="ioreg -l -w0 | grep Capacity"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
