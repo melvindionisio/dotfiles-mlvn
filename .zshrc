@@ -126,6 +126,7 @@ alias lah="ls -a"
 alias la="ll -a"
 
 alias checkbatteryhealth="ioreg -l -w0 | grep Capacity"
+alias filterbattres='ioreg -l -w0 | grep -w "CurrentCapacity\|AppleRawCurrentCapacity\|MaxCapacity\|DesignCapacity\|AppleRawMaxCapacity"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
