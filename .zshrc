@@ -111,6 +111,7 @@ alias gint="git init"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gdiff="git diff"
 alias gpush="git push origin master"
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
@@ -126,7 +127,7 @@ alias lah="ls -a"
 alias la="ll -a"
 
 alias checkbatteryhealth="ioreg -l -w0 | grep Capacity"
-alias filterbattres='ioreg -l -w0 | grep -w "CurrentCapacity\|AppleRawCurrentCapacity\|MaxCapacity\|DesignCapacity\|AppleRawMaxCapacity"'
+alias filterbattres='ioreg -l -w0 | grep -w "CurrentCapacity\|AppleRawCurrentCapacity\|MaxCapacity\|DesignCapacity\|AppleRawMaxCapacity\|CycleCount"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
