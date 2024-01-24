@@ -113,7 +113,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gdiff="git diff"
 alias gpush="git push origin master"
-alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 alias g="git"
 alias cls="clear"
