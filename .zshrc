@@ -110,7 +110,8 @@ source $ZSH/oh-my-zsh.sh
 alias gint="git init"
 alias gs="git status"
 alias ga="git add"
-alias gc="git commit -m"
+alias gaa="git add ."
+alias gc="git commit -m $1"
 alias gdiff="git diff"
 alias gpush="git push origin master"
 alias glg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -126,8 +127,17 @@ alias ignoreinit="touch .gitignore && echo -e '#Mac/OSX\n.DS_Store' >> .gitignor
 alias lah="ls -a"
 alias la="ll -a"
 
+alias dev="cd ~/Developer"
+alias up="cd .."
+alias root="cd ~"
+
 alias checkbatteryhealth="ioreg -l -w0 | grep Capacity"
 alias filterbattres='ioreg -l -w0 | grep -w "CurrentCapacity\|AppleRawCurrentCapacity\|MaxCapacity\|DesignCapacity\|AppleRawMaxCapacity\|CycleCount"'
+
+lazytouch(){
+  touch $1
+  open $1
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
