@@ -143,6 +143,14 @@ lazytouch(){
   open $1
 }
 
+genprvtkey(){
+  openssl genrsa -out $1.pem 2048
+}
+
+gencsr(){
+  openssl req -new -key $1.pem -out $2.pem
+}
+
 alias apropos="apropos 2>/dev/null"
 alias whatis="whatis 2>/dev/null"
 alias speedtest="networkquality"
