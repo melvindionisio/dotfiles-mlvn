@@ -134,6 +134,7 @@ alias la="ll -a"
 alias dev="cd ~/Developer"
 alias up="cd .."
 alias root="cd ~"
+alias gotosherlock="cd ~/CyberSec/Tools/sherlock/"
 
 alias checkbatteryhealth="ioreg -l -w0 | grep Capacity"
 alias filterbattres='ioreg -l -w0 | grep -w "CurrentCapacity\|AppleRawCurrentCapacity\|MaxCapacity\|DesignCapacity\|AppleRawMaxCapacity\|CycleCount"'
@@ -154,6 +155,10 @@ gencsr(){
 alias apropos="apropos 2>/dev/null"
 alias whatis="whatis 2>/dev/null"
 alias speedtest="networkquality"
+
+# Search online usernames
+alias sherlock="python3 ~/CyberSec/Tools/sherlock/sherlock/sherlock.py"
+alias usersherlock="cd ~/CyberSec/Tools/sherlock-results/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
